@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-list {
+  @apply font-semibold text-lg hover:text-primary transition-all duration-300;
+}
+.btn--primary {
+  @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/80;
+}
