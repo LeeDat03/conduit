@@ -1,6 +1,8 @@
 <app-hero></app-hero>
 
-<div class="flex gap-10 px-20 py-5">
+<div
+  class="flex flex-col md:flex-row justify-between gap-5 px-5 sm:px-10 md:px-20 py-5"
+>
   <div class="flex-[4] flex flex-col">
     <ul class="flex">
       <li class="feed--button">
@@ -12,14 +14,12 @@
     <app-article-list class="pt-3 border-t border-gray-400"></app-article-list>
   </div>
 
-  <div class="flex-[1] bg-zinc-900 rounded-lg px-6 py-4">
-    <h4 class="text-xl mb-4">Popular tag</h4>
-    <p class="flex gap-2 flex-wrap max-w-[300px]">
-      <span
-        *ngFor="let i of loopArray"
-        class="bg-gray-500 px-1 rounded-full flex items-center justify-center cursor-pointer"
-        >eos</span
-      >
+  <div
+    class="flex-[1] bg-zinc-900 rounded-lg px-4 py-2 md:px-6 md:py-4 max-h-[300px]"
+  >
+    <h4 class="text-xl mb-4">Popular tags</h4>
+    <p class="flex gap-2 flex-wrap">
+      <span class="tag--list">eos</span>
     </p>
   </div>
 </div>

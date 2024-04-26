@@ -1,1 +1,11 @@
-<p>article-list works!</p>
+<ul class="px-4 py-2 flex flex-col gap-6">
+  <li
+    class="pb-6 border-b-2 border-gray-500 last:border-0"
+    *ngFor="let article of articles"
+  >
+    <app-profile [article]="article"></app-profile>
+    <app-article-preview [article]="article"></app-article-preview>
+  </li>
+</ul>
+
+<nav class="mt-10">Navigation here</nav>
