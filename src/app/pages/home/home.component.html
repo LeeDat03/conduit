@@ -11,7 +11,11 @@
       <li class="feed--button"><a>Global Feed</a></li>
     </ul>
 
-    <app-article-list class="pt-3 border-t border-gray-400"></app-article-list>
+    <app-article-list
+      class="pt-3 border-t border-gray-400"
+      [limit]="10"
+      [config]="listConfig"
+    ></app-article-list>
   </div>
 
   <div
