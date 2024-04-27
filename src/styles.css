@@ -18,5 +18,5 @@ body {
 }
 
 .tag--list {
-  @apply bg-gray-500 text-sm px-1 rounded-full flex items-center justify-center cursor-pointer;
+  @apply bg-gray-500 text-sm px-2 py-1 rounded-xl flex items-center justify-center cursor-pointer;
 }

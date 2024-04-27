@@ -5,7 +5,7 @@ import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './profile.component.html',
 })
 export class ProfileComponent {

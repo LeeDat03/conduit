@@ -1,4 +1,4 @@
-<div class="mt-4">
+<a [routerLink]="['/article/', article.slug]" class="mt-4">
   <h2 class="text-2xl font-bold text-gray-50">
     {{ article.title }}
   </h2>
@@ -8,8 +8,8 @@
 
   <div class="mt-4 flex justify-between items-center">
     <button class="text-xs">Read more...</button>
-    <ul class="flex gap-1 max-w-[250px] flex-wrap">
-      <li class="tag--list">eos</li>
+    <ul class="flex gap-1 flex-wrap">
+      <li class="tag--list" *ngFor="let tag of article.tagList">{{ tag }}</li>
     </ul>
   </div>
-</div>
+</a>
