@@ -17,6 +17,19 @@
       <app-article-preview [article]="article"></app-article-preview>
     </li>
   </ng-container>
-</ul>
 
-<nav class="mt-10">Navigation here</nav>
+  <nav class="mt-10">
+    <ul class="flex flex-wrap">
+      <li
+        *ngFor="let page of totalPages"
+        class="w-10 h-10 border border-gray-600 flex items-center justify-center cursor-pointer font-semibold hover:bg-primary hover:text-white hover:font-bold hover:border-primary rounded-sm"
+        [ngClass]="{
+          'bg-primary text-white font-bold border-primary': page === currentPage
+        }"
+        (click)="setPage(page)"
+      >
+        {{ page }}
+      </li>
+    </ul>
+  </nav>
+</ul>
